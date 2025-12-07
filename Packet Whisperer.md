@@ -51,6 +51,7 @@ Repeat the extraction process for **every DNS TXT record**:
     
 - **Preserve the order in which DNS records appear**  
 This ordering is essential — the archive fragments must be concatenated exactly in the sequence they were transmitted.→ The best way is to follow the Wireshark packet _No._ column (top → bottom).
+
 ![9](<images/Pasted image 20251207175708.png>)
 
 # Step 5: Reassemble and Decode
