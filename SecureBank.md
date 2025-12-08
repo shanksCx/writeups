@@ -228,7 +228,7 @@ A perfect name — we chained:
 * [Template Injection Table](https://cheatsheet.hackmanit.de/template-injection-table/)
 
 # ⭐Final Notes
-Thanks For reading. This was a fun challenge and it took quite a while to do due to trying different payloads and chaining the vulns.(which may not be clear since the writeup is short but I tried **ALOT** of payloads but i've listed only the ones that worked as a proof of concept).But it was fun nonetheless.
+Thanks For reading. This was a fun challenge and it took quite a while to do due to trying different payloads and chaining the vulns.(which may not be clear since the writeup is short but I tried many payloads, I've listed only the ones that worked as a proof of concept).But it was fun nonetheless.
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXc2c3d4MDV5MXBjbTQ1YWJhaGU1ZDVnNmN1b2l0Mmd6NjZheGQ5ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l1J3CbFgn5o7DGRuE/giphy.gif)
 
@@ -236,7 +236,7 @@ Writeup by : [Shanks](http://github.com/shanksCx)
 
 [![X (formerly Twitter)](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)](https://x.com/ShanksCx)
 
-Don't be shy and follow. Add me on discord if you want @shankscx.
+Don't be shy and follow. Add me on discord if you want  _@shankscx_
 
 
 
