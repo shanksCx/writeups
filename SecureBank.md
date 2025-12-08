@@ -238,7 +238,7 @@ Writeup by : [Shanks](http://github.com/shanksCx)
 
 [![X (formerly Twitter)](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)](https://x.com/ShanksCx)
 
-[![Add me on Discord](https://img.shields.io/badge/Discord-Add%20Me-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/1441087797585772564)
+[![Add me on Discord](https://img.shields.io/badge/Discord-Add%20Me-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)] @shankscx
 
 
 
