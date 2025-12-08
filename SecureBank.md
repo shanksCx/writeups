@@ -138,7 +138,7 @@ Result: `18.20.8` (this proved arbitrary server-side JS was being evaluated). Th
 Why this works:
 
 - In EJS templates `this` refers to the template context object. `this.constructor` is `Function` (or something that can produce a Function). `this.constructor.constructor('...')()` creates a new function from source code and executes it in server context — giving access to Node `process`, `require`, etc.(In case you've forgotten , i told you this like 2 and a half scrolls back 🙃)
-# Step 4: Safely turn RCE into useful actions
+# Step 4: Turn RCE into useful actions
 
 **Goal:** find the working directory and server entrypoint so we know where to look for files.
 
@@ -175,7 +175,7 @@ Why this works:
 })() %>
 
 ```
-**What this does :**
+** What this does :**
 
 - Uses `process.mainModule.require('child_process').execSync` to run `ls -la /srv`.
 (You might be asking yourself why run `ls -la` instead of `ls` .. it's simple we need to see the permissions on the file if it exists and to see hidden files too)
