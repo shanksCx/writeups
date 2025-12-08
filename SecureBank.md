@@ -15,6 +15,7 @@ This means we need to login - but we don't have the credentials?! So how are we 
 Aah there you go.  Legacy code - means outdated code(in short it hasn't been tested a lot and can be vulnerable to the early vulns)
 
 So I think whats the most common username for high profile accounts
+
 ![2](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExenYxNmU0NmVjYm9kZ2k3dDV1YnhxNnlxdDR1Y3o2M2k1OXBmeXF4YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/a5viI92PAF89q/giphy.gif)
 
  admin...It has to be admin.So I try admin and add the most common sqli trick ever.. Commenting out the username(you must fill the password field as it is a required field)
@@ -31,15 +32,19 @@ And… we’re in.
 But _where_?
 
 We get redirected to `/dashboard`, but
+
 ![4](<images/Pasted image 20251208182742.png>)
 
 When we check burpsuite , we get
+
 ![5](<images/Pasted image 20251208183619.png>)
+
 a 403 error meaning the login doesn't automatically attach a token to the users request when he's redirected to the dashboard.
 
 So i retrace my steps back to the login page and capture the token on burpsuite.
 
 ![6](<images/Pasted image 20251208183125.png>)
+
 and there we have it a token in the response . All we'll have to do is include it in all our requests.
 
 Here is how you add it:
@@ -50,14 +55,17 @@ Here is how you add it:
 Lets include it on our previous request to /dashboard
 
 ![7](<images/Pasted image 20251208183703.png>)
+
  We get a 200 OK . 
  
  Request the response to browser (for those who don't know how don't worry . Just right click the response select Request in browser on the menu that pops up , in original session, copy the link and paste in your browser.)
 
 After doing all this we finally get to the dashboard
+
 ![8](<images/Pasted image 20251208184107.png>)
 
 and it says hey admin(wow).I'm admin.
+
 ![9](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTFsdGQ3dnFyY2l0ZGhhM3FwNmE1dnUyenlob3N5c29uazhqZzNzcSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UiBdsfS6RQU92/giphy.gif)
 
 There is an Admin Panel button clicking it redirects us to another page.
@@ -67,6 +75,7 @@ There is an Admin Panel button clicking it redirects us to another page.
 Same issue as earlier but no worries you already know what to do now.Just add the header to the request in burp.
 
 After all that we are in finally
+
 ![11](<images/Pasted image 20251208185100.png>)
 
 # Or are we?
@@ -147,6 +156,7 @@ Why this works:
 - `<%- ... %>` prints raw output (unescaped) so newlines and special characters display clean.
     
 **Result:**  `/srv`
+
 ![14](<images/Pasted image 20251208213829.png>)
 
 ## List files in `/srv`
@@ -173,7 +183,8 @@ Why this works:
 
 - `execSync` runs a shell command and returns its output.    
 
-**Result:** listing showed `flag.txt` exists inside /srv.  Bingo.
+**Result:** listing showed `flag.txt` exists inside /srv.  # Bingo💥.
+
 ![14](<images/annotely_image.png>)
 
 
@@ -202,7 +213,8 @@ We found The flag finally
      ``r00t{ch41n1ng_vuln3r4b1l1t13s_l1k3_4_pr0_8f2a9c4e}``
 
 ![16](<images/Pasted image 20251208221751.png>)
-## It had only 42 solves.
+
+## It had only 42 solves😩.
 
 A perfect name — we chained:
 1. **SQL Injection** → admin login bypass
@@ -212,7 +224,7 @@ A perfect name — we chained:
 5. **Retrieve flag**
 
 # Resources You can use
-* ![EJS Docs](https://ejs.co/) 
+* [EJS Docs](https://ejs.co/) 
 * [SSTI labs](https://portswigger.net/web-security/server-side-template-injection/)
 * [child_process.execSync](https://nodejs.org/api/child_process.html)
 * [Template Injection Table](https://cheatsheet.hackmanit.de/template-injection-table/)
@@ -226,7 +238,7 @@ Writeup by : [Shanks](http://github.com/shanksCx)
 
 [![X (formerly Twitter)](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)](https://x.com/ShanksCx)
 
-Add me on Discord : @shankscx
+[![Add me on Discord](https://img.shields.io/badge/Discord-Add%20Me-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/1441087797585772564)
 
 
 
