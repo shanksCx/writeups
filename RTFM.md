@@ -33,6 +33,7 @@ So as the title says: **Read The Manual (the source code).**
 After extracting `public.zip`, the structure looks like this:
 
 ![](<images/Pasted image 20251207202234.png>)
+
 This is effectively the **entire backend** of the deployed challenge.  
 From this point, the goal is to **read the backend logic and uncover hidden admin functionality**.
 
