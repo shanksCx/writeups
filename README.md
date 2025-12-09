@@ -8,6 +8,7 @@ I'll post writeups for all the challenges i did in p3rf3ctr00t2025 here. Follow 
 | :--- | :--- | :--- | :--- |
 | **Packet Whisperer** | Forensics | Easy | [Read Solution](./Packet%20Whisperer.md) |
 | **Secure Bank** | Web | Medium | [Read Solution](./SecureBank.md)  |
+| **RTFM** | Web | Easy | [Read Solution](./RTFM.md)  |
 
 ## 🛠️ Tools I Use
 * **Forensics:** Wireshark , Eric Zimmerman Tools
