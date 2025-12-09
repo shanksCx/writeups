@@ -202,4 +202,4 @@ By inspecting only a few lines of Python, we uncover a full privilege escalation
 
 A simple but elegant challenge.
 
-# **Thanks for reading. Add me on discord @shankscx if you want to do any labs/challs or collab. I.m always open to learning.**
+# *Discord : @shankscx*
